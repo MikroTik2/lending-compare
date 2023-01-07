@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" href="https://compare24.net/favicon.ico" type="image/x-icon">
     <title>Compare24 | We compare and you save</title>
+
+    <script type="text/javascript">
+      
+      </script>
    </head>
   <body>
    
@@ -14,24 +18,34 @@
       <div class="container-lg">
 
          <div class="row align-items-center">
-            <div class="col text-center text-md-start">
+            <div class="col text-center text-md-start d-block d-md-flex align-items-center justify-content-between">
                <a href="/">
                   <img class="logo" src="assets/img/logo/logo_compressed.svg" alt="Compare24">
                </a>
+               <div class=" d-md-block d-none">
+                  <div class="lang-select d-flex card-title align-items-center">
+                     Select Region: 
+                     <div class="country-selector d-flex">
+                     <img src="assets/img/language-icon/US.svg" alt="US" style="width: 1.5rem;">
+                        <span class="card-title fw-bold">
+               
+                        </span>
+                     </div>
+                  </div>
+               </div>
             </div>
 
-            <div class="col d-md-block d-none">
-               <div class="text-end card-title">Select Region:</div>
-            </div>
          </div>
       
       </div>
-
-      <div class="text-white text-center text-get d-flex justify-content-center align-items-center" style="background-color: #355ec9;">
+      
+      <div class="text-white text-center text-get pl-1 pr-1 d-flex justify-content-center align-items-center" style="background-color: #355ec9;">
          Get FREE Quotes for all your needs around your home
       </div>
 
-      <div class="title mt-5 text-center">We help you find trusted professionals to improve your home...</div>
+      <div id="country"></div>
+
+      <h1 class="title mt-5 text-center">We help you find trusted professionals to improve your home...</h1>
       <div class="title-sm mt-3 mb-3 text-center">Solar panels, HVAC, Alarm systems, and whatever else you might need</div>
 
       <div class="container-fluid text-center">
@@ -41,10 +55,10 @@
             <div class="col-sm-12 col-md-6 d-md-block d-flex justify-content-center">
                <div class="card float-md-end" style="width: 11.5rem;">
                   <div class="icon">
-                     <img slot="icon" src="assets/img/solar.svg" alt="solar-us">
+                     <img slot="icon" src="assets/img/svg/solar.svg" alt="solar-us">
                   </div> 
                   <div class="label svelte-1qr8zg9">
-                     <div slot="label" class="card-title">Solar Energy Panels</div>
+                     <div slot="label" class="card-title text-center">Solar Energy Panels</div>
                   </div>
                </div>
             </div>
@@ -52,10 +66,10 @@
             <div class="col-sm-12 col-md-6 d-md-block d-flex justify-content-center">
                <div class="card" style="width: 11.5rem;">
                   <div class="icon">
-                    <img slot="icon" src="assets/img/auto.svg" alt="auto-us">
+                    <img slot="icon" src="assets/img//svg/auto.svg" alt="auto-us">
                   </div> 
                   <div class="label svelte-1qr8zg9">
-                     <div slot="label" class="card-title">Auto Issurance</div>
+                     <div slot="label" class="card-title text-center">Auto Issurance</div>
                   </div>
                </div>
             </div>
@@ -66,23 +80,25 @@
 
    <section class="page">
 
-         <div class="bg-shade svelte-i12lfc">
+         <div class="bg-shade">
             <div class="container-xxl" style="max-width: 1100px;">
+
                <div class="row">
-                  <div class="info img-right svelte-i12lfc">
-                     <div class="svelte-i12lfc">
+                  <div class="info img-right ">
+                     <div class="text">
                         <h5 class="title3">Easy, Hassle-Free, Simple &amp; Fast Quotes</h5> 
-                        <p class="svelte-i12lfc">
+                        <p class="card-title">
                            It doesn’t take you longer than 30 seconds to find a suitable contractor or service provider
                            for your home, thanks to our proprietary technology. We connect you within minutes to a trustworthy 
                            and suitable provider in your area.
                         </p> 
          
-                        <button class="rounded-btn svelte-1rbc594 card-title">Find professionals</button>
+                        <button class="rounded-btn  card-title">Find professionals</button>
                      </div> 
-                     <img src="assets/img/photo/image1.png" alt="Fast Quotes" class="svelte-i12lfc">
+                     <img src="assets/img/photo/image1.png" alt="Fast Quotes" class="w-100">
                   </div>
                </div>
+
             </div>
          </div>
    
@@ -92,18 +108,18 @@
       <div class="container-xxl"> 
 
          <div class="row">
-            <div class="info img-left svelte-i12lfc content mt-5">
-               <img src="assets/img/photo/image2.png" alt="Compare24-Blog" class="svelte-i12lfc">
-                  <div class="svelte-i12lfc">
+            <div class="info img-left content mt-5">
+               <img src="assets/img/photo/image2.png" alt="Compare24-Blog" class="w-100">
+                  <div class="text">
                     <h5 class="title3">Our Blog will help you stay updated on the latest home imprvement trends</h5>
                     
-                      <p class="svelte-i12lfc">
+                      <p class="card-title">
                         Technology doesn’t stop. Neither do our editors! We report at least once weekly on the latest updates in home
                         improvement technology. Take a quick look and stay updated!
                       </p> 
    
-                     <a href="https://blog.compare24.net/what-home-improvements-reduce-energy-bills" class="svelte-1rbc594 text-decoration-none">
-                    <button class="rounded-btn svelte-1rbc594 card-title">Discover the Compare24 Blog</button>
+                     <a href="https://blog.compare24.net/what-home-improvements-reduce-energy-bills" class="text-decoration-none">
+                    <button class="rounded-btn card-title">Discover the Compare24 Blog</button>
                   </a>
                </div>
             </div>
@@ -115,10 +131,10 @@
             <div class="col-sm-12 col-md-6 d-md-block d-flex justify-content-center">
                <div class="card float-md-end" style="width: 11.5rem;">
                   <div class="icon">
-                     <img slot="icon" src="assets/img/solar.svg" alt="solar-us">
+                     <img slot="icon" src="assets/img/svg/solar.svg" alt="solar-us">
                   </div> 
                   <div class="label svelte-1qr8zg9">
-                     <div slot="label" class="card-title">Solar Energy Panels</div>
+                     <div slot="label" class="card-title text-center">Solar Energy Panels</div>
                   </div>
                </div>
             </div>
@@ -126,10 +142,10 @@
             <div class="col-sm-12 col-md-6 d-md-block d-flex justify-content-center">
                <div class="card" style="width: 11.5rem;">
                   <div class="icon">
-                    <img slot="icon" src="assets/img/auto.svg" alt="auto-us">
+                    <img slot="icon" src="assets/img/svg/auto.svg" alt="auto-us">
                   </div> 
                   <div class="label svelte-1qr8zg9">
-                     <div slot="label" class="card-title">Auto Issurance</div>
+                     <div slot="label" class="card-title text-center">Auto Issurance</div>
                   </div>
                </div>
             </div>
@@ -140,32 +156,32 @@
 
    <footer class="footer">
       <div class="button-row">
-         <ul class="footers-items d-flex align-items-center p-4 justify-content-center list-unstyled">
+         <ul class="footers-items d-flex align-items-center p-4 justify-content-center gap-1 gap-md-3 gap-sm-2 list-unstyled">
 
             <li class="footer-item">
-               <a href="/" class="footers-link text-decoration-none">Home</a>
+               <a href="/" class="footers-link text-decoration-none text-white">Home</a>
             </li> 
 
             <li class="footer-item">
-               <a href="https://blog.compare24.net/" class="footers-link text-decoration-none">Blog</a>
+               <a href="https://blog.compare24.net/" class="footers-link text-decoration-none text-white">Blog</a>
             </li> 
 
             <li class="footer-item">
-               <a href="" class="footers-link text-decoration-none">Terms</a>
+               <a href="" class="footers-link text-decoration-none text-white">Terms</a>
             </li> 
 
             <li class="footer-item">
-               <a href="" class="footers-link text-decoration-none">Privacy Policy</a>
+               <a href="" class="footers-link text-decoration-none text-white">Privacy Policy</a>
             </li> 
 
             <li class="footer-item">
-               <a href="" class="footers-link text-decoration-none">Cookie Policy</a>
+               <a href="" class="footers-link text-decoration-none text-white">Cookie Policy</a>
             </li> 
 
             <li class="footer-item">
-               <a href="https://jobexpert.biz/us" class="with-icon d-flex align-items-center gap-2 footers-link text-decoration-none">
+               <a href="https://jobexpert.biz/us" class="with-icon d-flex align-items-center gap-2 footers-link text-decoration-none text-white">
                   Leads for your Business?
-                  <img src="assets/img/jobexpert-logo.svg" alt="jobexpert-logo" width="22px" height="22px" class="footer-logo">
+                  <img src="assets/img/svg/jobexpert-logo.svg" alt="jobexpert-logo" width="22px" height="22px" class="footer-logo">
                </a>
             </li>
 
@@ -173,6 +189,8 @@
       </div> 
    </footer>
    
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+   <script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=en-RU" type="text/javascript"></script>
    <script src="assets/js/main.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   </body>

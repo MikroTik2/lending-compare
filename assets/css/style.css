@@ -37,13 +37,13 @@ th, thead, time, tr, tt, u, ul, var, video {
 
 .title {
    font-size: 2.5rem;
-   font-family: 'raleway', sans-serif;
+   font-family: 'raleway';
 }
 .title2 {
    font-size: 2.5rem;
    margin-top: 100px;
    font-weight: 700;
-   font-family: 'raleway', sans-serif;
+   font-family: 'raleway';
 }
 .title3 {
    font-weight: 700;
@@ -54,9 +54,18 @@ th, thead, time, tr, tt, u, ul, var, video {
 }
 
 .title-sm {
+   font-family: 'raleway';
    font-size: 20px;
-   font-family: 'raleway', sans-serif;
 }
+
+.country-selector {
+   padding: 0.4rem 1.5rem;
+   border: 1px solid #000;
+   margin-left: 10px;
+   border-radius: 5px;
+   gap: 5px;
+   cursor: pointer;
+} 
 
 /*=====================================Card-Us*/
 
@@ -89,34 +98,28 @@ th, thead, time, tr, tt, u, ul, var, video {
 
 /*=====================================Section-Quotes*/
 
-.info.svelte-i12lfc p.svelte-i12lfc, .info.svelte-i12lfc button {
-   margin-top: 1rem;
-   font-size: 1rem;
-}
-
-.bg-shade.svelte-i12lfc.svelte-i12lfc {
+.bg-shade {
    margin-top: 10rem;
    background: #ebeffa;
    padding: 10rem 0;
    clip-path: polygon(0 20%,100% 0,100% 100%,0 80%);
 }
 
-.info.svelte-i12lfc.svelte-i12lfc {
+.info {
    display: flex;
-   align-items: center;
    justify-content: space-evenly;
    margin: 0 auto;
 }
 
-.info.img-right.svelte-i12lfc>div.svelte-i12lfc {
-   padding-right: 2rem;
+.info.img-right > div {
+   padding-right: 1rem;
 }
 
-.info.svelte-i12lfc button {
+.info button {
    margin-top: 1rem;
 }
 
-.rounded-btn.svelte-1rbc594 {
+.rounded-btn {
    background-color: #6c0;
    box-shadow: 0 4px 4px rgb(0 0 0 / 20%);
    color: #fff;
@@ -127,24 +130,16 @@ th, thead, time, tr, tt, u, ul, var, video {
    transition: all .25s;
 }
 
-.info.svelte-i12lfc>img.svelte-i12lfc {
-   max-width: 100%;
+.rounded-btn:hover {
+   background-color: #8cdd3b;
 }
 
-.svelte-i12lfc .svelte-i12lfc {
-   font-family: 'raleway',sans-serif;
-}
-
-.info.img-left.svelte-i12lfc>div.svelte-i12lfc {
+.info.img-left > div {
    padding-left: 2rem;
 }
 
 .content {
    width: 80%;
-}
-
-.svelte-i12lfc2 {
-   padding-right: 2rem;
 }
 
 /*=====================================Button*/
@@ -166,29 +161,32 @@ th, thead, time, tr, tt, u, ul, var, video {
    transition: all .25s;
 }
 
-
 /*=====================================Footer*/
-
 .button-row {
    margin-top: 5rem;
    background-color: #3c4044;
-   width: 100%;
 }
 
 .footers-link {
-   list-style: none;
-   color: #fff;
    font-family: 'raleway';
-   font-weight: 500;
+   font-weight: 600;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1092px) {
    .content {width: 100%;}
 }
 
 @media screen and (max-width: 768px) {
-   .info.img-right.svelte-i12lfc.svelte-i12lfc {flex-direction: column-reverse;}
-   .info.svelte-i12lfc.svelte-i12lfc {flex-wrap: wrap;align-items: center;align-content: center;}
-   .bg-shade.svelte-i12lfc.svelte-i12lfc {padding: 8rem 0;clip-path: polygon(0 5%,100% 0,100% 100%,0 95%);}
-   .info.img-left.svelte-i12lfc>div.svelte-i12lfc {padding-left: 0rem;}
+   .info.img-right {flex-direction: column-reverse;}
+   .info {flex-wrap: wrap;align-items: center;align-content: center;}
+   .bg-shade {padding: 8rem 0;clip-path: polygon(0 5%,100% 0,100% 100%,0 95%);}
+   .info.img-left > div {padding-left: 0rem;}
+   .footers-link {font-size: 12px;}
+}
+
+@media (max-width: 360px) {
+   .footers-link {font-size: 9px;text-align: center;line-height: 10px;}
+   .footer-item {line-height: 10px;}
+   .title2 {font-size: 2rem;}
+   .title {font-size: 2rem;}
 }
