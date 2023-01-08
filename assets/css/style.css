@@ -128,7 +128,6 @@ ul.main-modal li:not(:last-child) {
 
 .card-title {
    font-family: 'raleway';
-   color: #000;
    font-size: 1rem;
 }
 
@@ -156,14 +155,10 @@ ul.main-modal li:not(:last-child) {
    padding-right: 1rem;
 }
 
-.info button {
-   margin-top: 1rem;
-}
 
 .rounded-btn {
    background-color: #6c0;
    box-shadow: 0 4px 4px rgb(0 0 0 / 20%);
-   color: #fff;
    border-radius: 100px;
    display: flex;
    justify-content: center;
@@ -173,6 +168,7 @@ ul.main-modal li:not(:last-child) {
 
 .rounded-btn:hover {
    background-color: #8cdd3b;
+   transition: all .25s;
 }
 
 .info.img-left > div {
@@ -185,23 +181,6 @@ ul.main-modal li:not(:last-child) {
 
 /*=====================================Button*/
 
-.btn-rounded {
-   background-color: #6c0;
-   box-shadow: 0 4px 4px rgb(0 0 0 / 20%);
-   font-family: 'raleway', sans-serif;
-   color: #fff;
-   border-radius: 100px;
-   display: flex;
-   justify-content: center;
-   padding: 0.6rem 2rem;
-   transition: all .25s;
-}
-
-.btn-rounded:hover {
-   background-color: #8cdd3b;
-   color: #fff;
-   transition: all .25s;
-}
 
 /*=====================================Footer*/
 
