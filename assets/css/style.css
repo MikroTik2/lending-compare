@@ -28,42 +28,6 @@ th, thead, time, tr, tt, u, ul, var, video {
    margin: 0.7rem auto;
 }
 
-/*=====================================Modal*/
-
-ul.main-modal li:not(:last-child) {
-   margin-bottom: 1.5rem;
-}
-
-.main-modal {
-   padding-left: 0;
-}
-
-.item {
-   width: 100%;
-   height: 5rem;
-   display: flex;
-   justify-content: flex-start;
-   align-items: center;
-   padding: 1.5rem;
-   border-radius: 5px;
-   box-shadow: 0 0 15px rgb(0 0 0 / 25%);
-   transition: border .4s;
-   cursor: pointer;
-   transition: all ease 0.3s;
-}
-
-.item:hover {
-   transform: translateY(-5px);
-   transition: all ease 0.3s;
-}
-
-.item img {
-   width: auto;
-   height: 100%;
-   margin-right: 2rem;
-   max-height: 5.5rem;
-}
-
 /*=====================================Header*/
 
 .text-get {
@@ -95,15 +59,6 @@ ul.main-modal li:not(:last-child) {
    font-family: 'raleway';
    font-size: 20px;
 }
-
-.country-selector {
-   padding: 0.4rem 1.5rem;
-   border: 1px solid #000;
-   margin-left: 10px;
-   border-radius: 5px;
-   gap: 5px;
-   cursor: pointer;
-} 
 
 /*=====================================Card-Us*/
 
@@ -155,7 +110,6 @@ ul.main-modal li:not(:last-child) {
    padding-right: 1rem;
 }
 
-
 .rounded-btn {
    background-color: #6c0;
    box-shadow: 0 4px 4px rgb(0 0 0 / 20%);
@@ -178,9 +132,6 @@ ul.main-modal li:not(:last-child) {
 .content {
    width: 75%;
 }
-
-/*=====================================Button*/
-
 
 /*=====================================Footer*/
 

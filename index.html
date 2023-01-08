@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/">
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">-->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" href="https://compare24.net/favicon.ico" type="image/x-icon">
     <title>Compare24 | We compare and you save</title>
@@ -15,9 +16,11 @@
 
          <div class="row align-items-center">
             <div class="col text-center text-md-start d-block d-md-flex align-items-center justify-content-between">
+
                <a href="/">
                   <img class="logo" src="assets/img/logo/logo_compressed.svg" alt="Compare24">
                </a>
+
                <div class=" d-md-block d-none">
                   <div class="lang-select d-flex card-title align-items-center" data-bs-toggle="modal" data-bs-target="#modal">
                      Select Region: 
@@ -27,93 +30,16 @@
                      </div>
                   </div>
                </div>
+
             </div>
 
          </div>
 
-
-
-         <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content border-0">
-                <div class="modal-header border-bottom-0">
-                  <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body" style="padding: 2rem;">
-                  <ul class="main-modal">
-
-                     <li class="item svelte-opvzny">
-                        <img src="assets/img/language-icon/FR.svg" slot="image" alt="Fr">
-                           <div class="caption svelte-opvzny">
-                              <div>
-                                 <span slot="caption">FR</span>
-                              </div> 
-                           <div class="description svelte-opvzny"></div>
-                        </div> 
-                     </li>
-
-                     <li class="item svelte-opvzny">
-                        <img src="assets/img/language-icon/US.svg" slot="image" alt="Us">
-                           <div class="caption svelte-opvzny">                  
-                              <div>
-                                 <span slot="caption">US</span>
-                              </div> 
-                           <div class="description svelte-opvzny"></div>
-                        </div> 
-                     </li>
-
-                     <li class="item svelte-opvzny">
-                        <img src="assets/img/language-icon/UK.svg" slot="image" alt="Uk">
-                          <div class="caption svelte-opvzny">
-                              <div>
-                                 <span slot="caption">UK</span>
-                              </div> 
-                           <div class="description svelte-opvzny"></div>
-                        </div> 
-                     </li>
-
-                     <li class="item svelte-opvzny">
-                       <img src="assets/img/language-icon/ES.svg" slot="image" alt="Es">
-                           <div class="caption svelte-opvzny">
-                              <div>
-                                 <span slot="caption">ES</span>
-                              </div> 
-                           <div class="description svelte-opvzny"></div>
-                        </div> 
-                     </li>
-
-                     <li class="item svelte-opvzny">
-                      <img src="assets/img/language-icon/DE.svg" slot="image" alt="De">
-                            <div class="caption svelte-opvzny"><div>
-                                 <span slot="caption">DE</span>
-                            </div> 
-                           <div class="description svelte-opvzny"></div>
-                        </div> 
-                     </li>
-
-                     <li class="item svelte-opvzny">
-                      <img src="assets/img/language-icon/AU.svg" slot="image" alt="Au">
-                        <div class="caption svelte-opvzny">
-                           <div>
-                              <span slot="caption">AU</span>
-                           </div> 
-                          <div class="description svelte-opvzny"></div>
-                        </div> 
-                     </li>
-
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-      
       </div>
       
       <div class="text-white text-center text-get pl-1 pr-1 d-flex justify-content-center align-items-center" style="background-color: #355ec9;">
          Get FREE Quotes for all your needs around your home
       </div>
-
-      <div id="country"></div>
 
       <h1 class="title mt-5 text-center">We help you find trusted professionals to improve your home...</h1>
       <div class="title-sm mt-3 mb-3 text-center">Solar panels, HVAC, Alarm systems, and whatever else you might need</div>
@@ -204,6 +130,7 @@
 
             <div class="col-sm-12 col-md-6 d-md-block d-flex justify-content-center">
                <a href="https://compare24.net/solar/us#" class="text-decoration-none">
+
                   <div class="card float-md-end" style="width: 11.5rem;">
                      <div class="icon">
                         <img slot="icon" src="assets/img/svg/solar.svg" alt="solar-us">
@@ -212,11 +139,13 @@
                         <div slot="label" class="card-title text-center" style="color: #000;">Solar Energy Panels</div>
                      </div>
                   </div>
+
                </a>
             </div>
 
             <div class="col-sm-12 col-md-6 d-md-block d-flex justify-content-center">
                <a href="https://auto.compare24.net/#" class="text-decoration-none">
+
                   <div class="card" style="width: 11.5rem;">
                      <div class="icon">
                        <img slot="icon" src="assets/img/svg/auto.svg" alt="auto-us">
@@ -225,6 +154,7 @@
                         <div slot="label" class="card-title text-center" style="color: #000;">Auto Issurance</div>
                      </div>
                   </div>
+                  
                </a>
             </div>
 
