@@ -28,6 +28,42 @@ th, thead, time, tr, tt, u, ul, var, video {
    margin: 0.7rem auto;
 }
 
+/*=====================================Modal*/
+
+ul.main-modal li:not(:last-child) {
+   margin-bottom: 1.5rem;
+}
+
+.main-modal {
+   padding-left: 0;
+}
+
+.item {
+   width: 100%;
+   height: 5rem;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   padding: 1.5rem;
+   border-radius: 5px;
+   box-shadow: 0 0 15px rgb(0 0 0 / 25%);
+   transition: border .4s;
+   cursor: pointer;
+   transition: all ease 0.3s;
+}
+
+.item:hover {
+   transform: translateY(-5px);
+   transition: all ease 0.3s;
+}
+
+.item img {
+   width: auto;
+   height: 100%;
+   margin-right: 2rem;
+   max-height: 5.5rem;
+}
+
 /*=====================================Header*/
 
 .text-get {
@@ -39,12 +75,14 @@ th, thead, time, tr, tt, u, ul, var, video {
    font-size: 2.5rem;
    font-family: 'raleway';
 }
+
 .title2 {
    font-size: 2.5rem;
    margin-top: 100px;
    font-weight: 700;
    font-family: 'raleway';
 }
+
 .title3 {
    font-weight: 700;
    font-family: 'raleway';
@@ -90,6 +128,8 @@ th, thead, time, tr, tt, u, ul, var, video {
 
 .card-title {
    font-family: 'raleway';
+   color: #000;
+   font-size: 1rem;
 }
 
 .icon > img {
@@ -107,6 +147,7 @@ th, thead, time, tr, tt, u, ul, var, video {
 
 .info {
    display: flex;
+   align-items: center;
    justify-content: space-evenly;
    margin: 0 auto;
 }
@@ -139,10 +180,11 @@ th, thead, time, tr, tt, u, ul, var, video {
 }
 
 .content {
-   width: 80%;
+   width: 75%;
 }
 
 /*=====================================Button*/
+
 .btn-rounded {
    background-color: #6c0;
    box-shadow: 0 4px 4px rgb(0 0 0 / 20%);
@@ -162,14 +204,19 @@ th, thead, time, tr, tt, u, ul, var, video {
 }
 
 /*=====================================Footer*/
+
 .button-row {
    margin-top: 5rem;
    background-color: #3c4044;
 }
 
+.footers-items {
+   line-height: 15px;
+   flex-wrap: wrap;
+}
+
 .footers-link {
    font-family: 'raleway';
-   font-weight: 600;
 }
 
 @media screen and (max-width: 1092px) {
@@ -185,8 +232,10 @@ th, thead, time, tr, tt, u, ul, var, video {
 }
 
 @media (max-width: 360px) {
-   .footers-link {font-size: 9px;text-align: center;line-height: 10px;}
+   .text-get {height: 5rem;}
+   .footers-link {font-size: 10px; text-align: center;line-height: 8px;}
    .footer-item {line-height: 10px;}
-   .title2 {font-size: 2rem;}
-   .title {font-size: 2rem;}
+   .title2 {font-size: 1.4rem;}
+   .title {font-size: 1.7rem;}
+   .images {width: 100%;}
 }

@@ -3,14 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" href="https://compare24.net/favicon.ico" type="image/x-icon">
     <title>Compare24 | We compare and you save</title>
-
-    <script type="text/javascript">
-      
-      </script>
    </head>
   <body>
    
@@ -23,19 +19,91 @@
                   <img class="logo" src="assets/img/logo/logo_compressed.svg" alt="Compare24">
                </a>
                <div class=" d-md-block d-none">
-                  <div class="lang-select d-flex card-title align-items-center">
+                  <div class="lang-select d-flex card-title align-items-center" data-bs-toggle="modal" data-bs-target="#modal">
                      Select Region: 
                      <div class="country-selector d-flex">
                      <img src="assets/img/language-icon/US.svg" alt="US" style="width: 1.5rem;">
-                        <span class="card-title fw-bold">
-               
-                        </span>
+                        <span class="card-title fw-bold">US</span>
                      </div>
                   </div>
                </div>
             </div>
 
          </div>
+
+         <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content border-0">
+                <div class="modal-header border-bottom-0">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="padding: 2rem;">
+                  <ul class="main-modal">
+
+                     <li class="item svelte-opvzny">
+                        <img src="assets/img/language-icon/FR.svg" slot="image" alt="Fr">
+                           <div class="caption svelte-opvzny">
+                              <div>
+                                 <span slot="caption">FR</span>
+                              </div> 
+                           <div class="description svelte-opvzny"></div>
+                        </div> 
+                     </li>
+
+                     <li class="item svelte-opvzny">
+                        <img src="assets/img/language-icon/US.svg" slot="image" alt="Us">
+                           <div class="caption svelte-opvzny">                  
+                              <div>
+                                 <span slot="caption">US</span>
+                              </div> 
+                           <div class="description svelte-opvzny"></div>
+                        </div> 
+                     </li>
+
+                     <li class="item svelte-opvzny">
+                        <img src="assets/img/language-icon/UK.svg" slot="image" alt="Uk">
+                          <div class="caption svelte-opvzny">
+                              <div>
+                                 <span slot="caption">UK</span>
+                              </div> 
+                           <div class="description svelte-opvzny"></div>
+                        </div> 
+                     </li>
+
+                     <li class="item svelte-opvzny">
+                       <img src="assets/img/language-icon/ES.svg" slot="image" alt="Es">
+                           <div class="caption svelte-opvzny">
+                              <div>
+                                 <span slot="caption">ES</span>
+                              </div> 
+                           <div class="description svelte-opvzny"></div>
+                        </div> 
+                     </li>
+
+                     <li class="item svelte-opvzny">
+                      <img src="assets/img/language-icon/DE.svg" slot="image" alt="De">
+                            <div class="caption svelte-opvzny"><div>
+                                 <span slot="caption">DE</span>
+                            </div> 
+                           <div class="description svelte-opvzny"></div>
+                        </div> 
+                     </li>
+
+                     <li class="item svelte-opvzny">
+                      <img src="assets/img/language-icon/AU.svg" slot="image" alt="Au">
+                        <div class="caption svelte-opvzny">
+                           <div>
+                              <span slot="caption">AU</span>
+                           </div> 
+                          <div class="description svelte-opvzny"></div>
+                        </div> 
+                     </li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
       
       </div>
       
@@ -53,25 +121,29 @@
          <div class="row">
 
             <div class="col-sm-12 col-md-6 d-md-block d-flex justify-content-center">
-               <div class="card float-md-end" style="width: 11.5rem;">
-                  <div class="icon">
-                     <img slot="icon" src="assets/img/svg/solar.svg" alt="solar-us">
-                  </div> 
-                  <div class="label svelte-1qr8zg9">
-                     <div slot="label" class="card-title text-center">Solar Energy Panels</div>
+               <a href="https://compare24.net/solar/us#" class="text-decoration-none">
+                  <div class="card float-md-end" style="width: 11.5rem;">
+                     <div class="icon">
+                        <img slot="icon" src="assets/img/svg/solar.svg" alt="solar-us">
+                     </div> 
+                     <div class="label">
+                        <div class="card-title text-center">Solar Energy Panels</div>
+                     </div>
                   </div>
-               </div>
+               </a>
             </div>
-
+         
             <div class="col-sm-12 col-md-6 d-md-block d-flex justify-content-center">
-               <div class="card" style="width: 11.5rem;">
-                  <div class="icon">
-                    <img slot="icon" src="assets/img//svg/auto.svg" alt="auto-us">
-                  </div> 
-                  <div class="label svelte-1qr8zg9">
-                     <div slot="label" class="card-title text-center">Auto Issurance</div>
+               <a href="https://auto.compare24.net/#" class="text-decoration-none">
+                  <div class="card" style="width: 11.5rem;">
+                     <div class="icon">
+                       <img slot="icon" src="assets/img//svg/auto.svg" alt="auto-us">
+                     </div> 
+                     <div class="label">
+                        <div class="card-title text-center">Auto Issurance</div>
+                     </div>
                   </div>
-               </div>
+               </a>
             </div>
 
          </div>
@@ -95,7 +167,7 @@
          
                         <button class="rounded-btn  card-title">Find professionals</button>
                      </div> 
-                     <img src="assets/img/photo/image1.png" alt="Fast Quotes" class="w-100">
+                     <img src="assets/img/photo/image1.png" alt="Fast Quotes" class="images">
                   </div>
                </div>
 
@@ -109,7 +181,7 @@
 
          <div class="row">
             <div class="info img-left content mt-5">
-               <img src="assets/img/photo/image2.png" alt="Compare24-Blog" class="w-100">
+               <img src="assets/img/photo/image2.png" alt="Compare24-Blog" class="images">
                   <div class="text">
                     <h5 class="title3">Our Blog will help you stay updated on the latest home imprvement trends</h5>
                     
@@ -129,25 +201,29 @@
          <div class="row">
 
             <div class="col-sm-12 col-md-6 d-md-block d-flex justify-content-center">
-               <div class="card float-md-end" style="width: 11.5rem;">
-                  <div class="icon">
-                     <img slot="icon" src="assets/img/svg/solar.svg" alt="solar-us">
-                  </div> 
-                  <div class="label svelte-1qr8zg9">
-                     <div slot="label" class="card-title text-center">Solar Energy Panels</div>
+               <a href="https://compare24.net/solar/us#" class="text-decoration-none">
+                  <div class="card float-md-end" style="width: 11.5rem;">
+                     <div class="icon">
+                        <img slot="icon" src="assets/img/svg/solar.svg" alt="solar-us">
+                     </div> 
+                     <div class="label svelte-1qr8zg9">
+                        <div slot="label" class="card-title text-center">Solar Energy Panels</div>
+                     </div>
                   </div>
-               </div>
+               </a>
             </div>
 
             <div class="col-sm-12 col-md-6 d-md-block d-flex justify-content-center">
-               <div class="card" style="width: 11.5rem;">
-                  <div class="icon">
-                    <img slot="icon" src="assets/img/svg/auto.svg" alt="auto-us">
-                  </div> 
-                  <div class="label svelte-1qr8zg9">
-                     <div slot="label" class="card-title text-center">Auto Issurance</div>
+               <a href="https://auto.compare24.net/#" class="text-decoration-none">
+                  <div class="card" style="width: 11.5rem;">
+                     <div class="icon">
+                       <img slot="icon" src="assets/img/svg/auto.svg" alt="auto-us">
+                     </div> 
+                     <div class="label svelte-1qr8zg9">
+                        <div slot="label" class="card-title text-center">Auto Issurance</div>
+                     </div>
                   </div>
-               </div>
+               </a>
             </div>
 
          </div>
@@ -156,10 +232,10 @@
 
    <footer class="footer">
       <div class="button-row">
-         <ul class="footers-items d-flex align-items-center p-4 justify-content-center gap-1 gap-md-3 gap-sm-2 list-unstyled">
+         <ul class="footers-items text-center d-flex align-items-center p-4 justify-content-center gap-1 gap-md-3 gap-sm-2 list-unstyled">
 
             <li class="footer-item">
-               <a href="/" class="footers-link text-decoration-none text-white">Home</a>
+               <a href="/" class="footers-link fw-bold text-decoration-none text-white">Home</a>
             </li> 
 
             <li class="footer-item">
@@ -189,9 +265,7 @@
       </div> 
    </footer>
    
-   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-   <script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=en-RU" type="text/javascript"></script>
    <script src="assets/js/main.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+   <script src="assets/js/bootstrap.min.js"></script>
   </body>
 </html>
